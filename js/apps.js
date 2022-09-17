@@ -242,5 +242,46 @@ window.onload = function () {
   
   new NavigationPage();
 
+
+  /*************** POP UP ***************** */
+  function openPopup(popup) {
+    /* Open popup and make accessible screen readers */
+    $(popup).show().attr("aria-hidden", "false");
+    /* Focus on element to guide screen readers to popup */
+    $("#closePopup").focus();
+  }
   
- 
+  function closePopup(popup) {
+    /* Close popup and hide from screen readers */
+    $(popup).hide().attr("aria-hidden", "true");
+    /* Focus screen readers back to button */
+    $("#openMyPopup").focus();
+  }
+  /****/
+  function openPopup2(popup2) {
+    /* Open popup and make accessible screen readers */
+    $(popup2).show().attr("aria-hidden", "false");
+    /* Focus on element to guide screen readers to popup */
+    $("#closePopup2").focus();
+  }
+  
+  function closePopup2(popup2) {
+    /* Close popup and hide from screen readers */
+    $(popup2).hide().attr("aria-hidden", "true");
+    /* Focus screen readers back to button */
+    $("#openMyPopup2").focus();
+  }
+  /****/
+  function openPopup3(popup3) {
+    /* Open popup and make accessible screen readers */
+    $(popup3).show().attr("aria-hidden", "false");
+    /* Focus on element to guide screen readers to popup */
+    $("#closePopup2").focus();
+  }
+  
+  function closePopup3(popup3) {
+    /* Close popup and hide from screen readers */
+    $(popup3).hide().attr("aria-hidden", "true");
+    /* Focus screen readers back to button */
+    $("#openMyPopup3").focus();
+  }
