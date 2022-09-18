@@ -1,3 +1,8 @@
+//Remove Image in @media//
+
+ 
+
+
 // JS pour CV //
 (function() {
   $('.skills-prog li').find('.skills-bar').each(function(i) {
@@ -285,3 +290,19 @@ window.onload = function () {
     /* Focus screen readers back to button */
     $("#openMyPopup3").focus();
   }
+
+/********************************  MES COMPETENCES **** */
+var swiper = new Swiper('.blog-slider', {
+  spaceBetween: 30,
+  effect: 'fade',
+  loop: true,
+  mousewheel: {
+    invert: false,
+  },
+  // autoHeight: true,
+  pagination: {
+    el: '.blog-slider__pagination',
+    clickable: true,
+  }
+});
+
