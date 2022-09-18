@@ -1047,7 +1047,6 @@ input:invalid ~ label,
 }
 
 .challenge { 
-  
 color: #ff0266;
 margin: 20px;
 padding: 20px;
@@ -2096,6 +2095,10 @@ button {
 @media screen and (max-width: 512px) {
   .tablinks.active {
     height: 60px;
+    border-radius: 1px;
+ }
+ .slider h2 {
+  margin-bottom: 5px;
  }
 }
 /** Si l'écran est - ou égal**/
@@ -2183,6 +2186,13 @@ button {
     height: auto;
     margin-top: 150px;
   }
+  .challenge { 
+    margin-top: 10px;
+    padding: 10px;
+    }
+    h4 {
+      margin-top: 5px;
+    }
 }
 @media screen and (max-height: 500px) and (min-width: 992px) {
   .blog-slider {
