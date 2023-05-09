@@ -1,10 +1,18 @@
-@font-face {
-  font-family:'KG Broken Vessels Sketch';
-  src:url(../font/kimberly-geswein_kg-broken-vessels-sketch/KGBrokenVesselsSketch.ttf);
+body {
+  background-image:url(../image/chalk-min.jpg);
+  background-size:cover;
+  background-attachment:fixed;
+  overflow-x:hidden;
+  background-color: rgba(0,0,0,.65);
 }
-@font-face {
-  font-family:'KG Happy';
-  src:url(../font/KG-HAPPY/KGHAPPY.ttf);
+::selection {
+  background-color:red;
+  color:#ccf381;
+}
+a::after {
+  color:#ccf381;
+  transition:color .3s;
+  text-decoration:none;
 }
 * {
   margin:0;
@@ -19,22 +27,14 @@
   html {
     width:100%;
   }
-  body {
-    background-image:url(../image/chalk-min.jpg);
-    background-size:cover;
-    background-attachment:fixed;
-    overflow-x:hidden;
-    background-color: rgba(0,0,0,.65);
-  }
-  ::selection {
-    background-color:red;
-    color:#ccf381;
-  }
-  a::after {
-    color:#ccf381;
-    transition:color .3s;
-    text-decoration:none;
-  }
+@font-face {
+  font-family:'KG Broken Vessels Sketch';
+  src:url(../font/kimberly-geswein_kg-broken-vessels-sketch/KGBrokenVesselsSketch.ttf);
+}
+@font-face {
+  font-family:'KG Happy';
+  src:url(../font/KG-HAPPY/KGHAPPY.ttf);
+}
   .header {
     position:sticky;
     top:0;
@@ -277,7 +277,7 @@
       color:#ccf381;
     }
     .home {
-      margin-top:3%;
+      margin-top:3s%;
     }
     .home-content {
       display:flex;
@@ -684,3 +684,37 @@
       background-color: #686868;
       color: #CCF381;
   }
+  lt-mirror {
+    display: none;
+}
+.lt-mirror__wrapper {
+    border: 2px solid #fafafa;
+    border-radius: 5px;
+    direction: ltr;
+    font: 500 15.2px monospace;
+    font-synthesis: weight style small-caps;
+    hyphens: manual;
+    letter-spacing: 0.5px;
+    line-break: auto;
+    margin: 5px 5px 5px 17.5469px;
+    padding: 12.8px 19.2px;
+    text-align: start;
+    text-decoration: none solid #fff;
+    text-indent: 0;
+    text-rendering: auto;
+    text-transform: none;
+    transform: none;
+    unicode-bidi: normal;
+    white-space: pre-wrap;
+    word-spacing: 0;
+    overflow-wrap: break-word;
+    writing-mode: horizontal-tb;
+    width: 273.459px;
+    height: 120.4px;
+}
+.lt-mirror__canvas {
+    margin-top: 0;
+    margin-left: 0;
+    width: 273.6px;
+    height: 120.4px;
+}
